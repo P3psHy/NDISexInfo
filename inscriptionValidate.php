@@ -1,9 +1,7 @@
 <?php
 
-
-
 try{
-    var_dump($sexe=$_REQUEST['sexe']);
+
     require "sqlconnect.php" ;
     $prenom=$_REQUEST['prenom'] ;
     $age=$_REQUEST['age'] ;
@@ -16,7 +14,7 @@ try{
         $typeS=false;
     }
 
-    $sql=$connection ->prepare("INSERT INTO compte (prenom,age,sexe,email,mdp) VALUES 
+    $sql= $connection->prepare("INSERT INTO compte (prenom,age,sexe,email_parent,mdp) VALUES 
     (:prenom, :age, :sexe, :email, :mdp)") ;
 
     $sql->bindParam(':prenom',$prenom,PDO::PARAM_STR);
@@ -24,8 +22,8 @@ try{
     $sql->bindParam(':sexe', $typeS, PDO::PARAM_BOOL);
     $sql->bindParam(':email', $mail, PDO::PARAM_STR);
     $sql->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+  
 
-    echo $sql;
 
     $sql->execute();
 
