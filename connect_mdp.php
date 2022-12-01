@@ -23,8 +23,6 @@
                     $id=$_REQUEST['id'] ;
 
                     $_SESSION['id'] = $id;
-                    var_dump($id);
-                    var_dump($_SESSION['id'])
                     
                     ?>
                 
