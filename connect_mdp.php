@@ -14,12 +14,22 @@
 
         <main>
             <div class="container">
-                <h2> veuillez renseignez votre identifiant : </h2>
+                <h2> veuillez renseignez votre Mot de passe : </h2>
 
-                    <form method='POST' action='connect_mdp.php'>
+                    <form method='POST' action='verification.php'>
+                    <?php
+                    session_start();
+                    
+                    $id=$_REQUEST['id'] ;
+
+                    $_SESSION['id'] = $id;
+                    var_dump($id);
+                    var_dump($_SESSION['id'])
+                    
+                    ?>
                 
                         <label>
-                            <input type="password" name="psw" placeholder="Renseignez votre Mot de passe" required>
+                            <input type="password" name="mdp" placeholder="Renseignez votre Mot de passe" required>
                         </label>
             
                         <button> Valider </button> 
