@@ -10,8 +10,8 @@
     <form method="POST" action="inscriptionValidate.php">
 
         <div>
-            <label>Nom: </label>
-            <input type="text" name="nom" id="nom">
+            <label>Prénom: </label>
+            <input type="text" name="prenom" id="prenom">
         </div>
         
         <div>
@@ -21,7 +21,7 @@
         
         <div>
             <label>Sexe: </label>
-            <select>
+            <select name="sexe">
                 <option value="0">Homme</option>
                 <option value="1">Femme</option>
             </select>
@@ -29,22 +29,22 @@
         
         <div>
             <label>Mail: </label>
-            <input type="text" name="nom" id="mail">
+            <input type="text" name="mail" id="mail">
         </div>
 
         <div>
             <label>Confirmer votre mail: </label>
-            <input type="text" name="nom" id="confirmMail">
+            <input type="text" name="confirmMail" id="confirmMail">
         </div>
 
         <div>
             <label>Mot de passe: </label>
-            <input type="password" name="nom" id="password">
+            <input type="password" name="password" id="password">
         </div>
 
         <div>
             <label>Confirmer votre mot de passe: </label>
-            <input type="password" name="password" id="confirmPassword">
+            <input type="password" name="confirmPassword" id="confirmPassword">
         </div>
 
         <div>
