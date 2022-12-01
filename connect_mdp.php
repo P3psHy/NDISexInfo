@@ -4,55 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Authentification2.css" />
-    <title>C</title>
+    <link rel="stylesheet" type="text/css" href="connect_mdp.css" />
+    <title>SexInfo | Connexion</title>
 
 </head>
+    <body>
+        <header>
+        </header>
 
-<body>
-
-    <header>
-            <a href="index.php">
-                <img src="../support%20photo/autodraw_08_06_2022-removebg-preview.png" height="80" width="210">
-            </a>
-    </header>
-
-    <main>
-
-        
-
+        <main>
             <div class="container">
+                <h2> veuillez renseignez votre identifiant : </h2>
 
-                <h2> veuillez renseignez votre Mot de passe : </h2>
-
-                    <form method='POST' action='verification.php'>
-                    <?php
-                    session_start();
-                    
-                    $login=$_REQUEST['login'] ;
-
-                    $_SESSION["MUID"]=$login ;
-                    
-                    ?>
+                    <form method='POST' action='connect_mdp.php'>
                 
                         <label>
-                        <input type="password" name="mdp" placeholder="Renseignez votre Mot de passe">
+                            <input type="password" name="psw" placeholder="Renseignez votre Mot de passe" required>
                         </label>
+            
+                        <button> Valider </button> 
 
-                        <input type="hidden" name="login" value="<?php echo $login;?>"> 
-
-        </br>
-        </br>
-
-                <button> Valider </button> 
-
-                </form>
-
+                    </form>
             </div>
-
-        
-        
-    </main>
-</body>
-
+        </main>
+    </body>
 </html>
