@@ -1,3 +1,13 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['id']) && !isset($_SESSION['mdp'])){
+        $_SESSION['erreurConnect']=false;
+        header("location: connect_id.php");
+    }else{
+
+        ?>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,3 +62,8 @@
     <a href="inscription.php">Connexion</a>
 </body>
 </html>
+
+
+<?php
+        }
+?>
