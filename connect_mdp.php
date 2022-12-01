@@ -17,7 +17,7 @@
         <main>
             <div class="container">
                 <div class="circle" id="change_color_zone"></div>
-                <div class="container">
+
                 
                     <div id="login">
                         <form method='POST' action='verification.php' class="form_login">
@@ -30,7 +30,7 @@
                         
                         ?>
                     
-                    <p class="title_login" id="change_color">Veuillez renseignez votre Mot de passe : </p>                                  
+                        <p class="title_login" id="change_color">Veuillez renseignez votre mot de passe : </p>                                  
                         <!-- Register buttons -->
                         <div class="text-center">
                         <label>
@@ -45,7 +45,7 @@
                             <button type="button" class="btn btn-link btn-floating mx-1"></button>
                         </div>
                     </div>
-                </div>
+                
             </div>
         </main>
     </body>
