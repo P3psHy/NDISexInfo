@@ -15,10 +15,9 @@
         <main>
         <?php 
         session_start();
+        
 
-        $_SESSION['erreurConnect']=false;
-
-        if(isset($_SESSION['erreurConnect']) || $_SESSION['erreurConnect'])
+        if(!isset($_SESSION['erreurConnect']) || $_SESSION['erreurConnect'])
         {
             echo "<p> Login ou mot de passe incorect </p>" ;
         }
@@ -26,12 +25,12 @@
         
         ?>
             <div class="container">
-                <h2> veuillez renseignez votre identifiant : </h2>
+                <h2> Veuillez renseigner votre identifiant : </h2>
 
                     <form method='POST' action='connect_mdp.php'>
                     
                         <label>
-                            <input type="email" name="id" placeholder="Renseignez votre Adresse email" required>
+                            <input type="email" name="id" placeholder="Adresse email" required>
                         </label>
             
                         <button> Valider </button> 
