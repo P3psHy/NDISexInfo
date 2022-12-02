@@ -19,7 +19,7 @@ if(!empty($ligne))
         $_SESSION['id'] = $id;
         $_SESSION['mdp'] = $mdp;
         $_SESSION['erreurConnect']=false;
-        header("Location: accueil.html");
+        header("Location: accueil.php");
        
 }
 }else{

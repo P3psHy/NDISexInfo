@@ -5,28 +5,31 @@
         $_SESSION['erreurConnect']=false;
         header("location: connect_id.php");
     }else{
-
+      include 'header.php';
         ?>
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SexInfo | Accueil</title>
-    <link href="style.css" rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-</head>
 <body>
+  <div id="circle" class="blue-color"></div>
+  <div id="circle2" class="blue-color"></div>
+  <div id="circle3" class="blue-color"></div>
+  <div id="circle4" class="blue-color"></div>
+  <div id="circle5" class="blue-color"></div>
+  <div id="circle6" class="blue-color"></div>
+  <div id="circle7" class="blue-color"></div>
     <div class="container text-center">
         <div class="row">
           <div class="col"></div>
-          <div class="col change_color"><h1>SEXINFO</h1></div>
+          <div class="col change_color blue-text" id="title"><h1>SEXINFO</h1></div>
           <div class="col"></div>
         </div>
+    </div>
+    <div>
+      <ul class="navbar_fond">
+        <li id="blue"></li>
+        <li id="rose"></li>
+        <li id="vert"></li>
+        <li id="jaune"></li>
+        <li id="orange"></li>
+      </ul>
     </div>
 
     <div class="nav_content rounded-pill">
@@ -58,12 +61,9 @@
         
         
     </div>
-    <a href="connect_id.php">Connexion</a>
-    <a href="inscription.php">Connexion</a>
 </body>
-</html>
-
 
 <?php
+include 'footer.php';
         }
 ?>
