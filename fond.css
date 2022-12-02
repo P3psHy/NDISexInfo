@@ -1,0 +1,174 @@
+body{
+    overflow: hidden;
+}
+
+/* Navbar */
+
+.navbar_fond {
+    border: solid;
+    z-index: -1;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 15%;
+    padding: 1%;
+    border-radius: 30%;
+    background-color: white;
+}
+
+.blue-color {
+    background: rgb(0, 30, 255);
+}
+
+.blue-text{
+    color: rgb(0, 30, 255);
+}
+
+.rose-color {
+    background: rgb(255, 0, 247);
+}
+
+.rose-text {
+    color: rgb(255, 0, 247);
+}
+
+.vert-color {
+    background: rgb(42, 181, 4);
+}
+
+.vert-text {
+    color: rgb(42, 181, 4);
+}
+
+.jaune-color {
+    background: rgb(255, 255, 0);
+}
+
+.jaune-text {
+    color: rgb(255, 255, 0);
+}
+
+.orange-color {
+    background: rgb(255, 132, 0);
+}
+
+.orange-text {
+    color: rgb(255, 132, 0);
+}
+
+#blue {
+    list-style-type: none;
+    background: rgb(0, 30, 255);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#rose {
+    list-style-type: none;
+    background: rgb(255, 0, 247);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+#vert {
+    list-style-type: none;
+    background: rgb(42, 181, 4);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+#jaune {
+    list-style-type: none;
+    background: rgb(255, 255, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+#orange {
+    list-style-type: none;
+    background: rgb(255, 132, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+
+/* Bulles*/
+
+#circle {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+#circle2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: -50px;
+    z-index: -1;
+    position: absolute;
+}
+
+#circle3 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 600px;
+    margin-left: 300px;
+    z-index: -1;
+    position: absolute;
+}
+
+
+#circle4 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 600px;
+    z-index: -1;
+    position: absolute;
+}
+
+#circle5 {
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    margin-top: 600px;
+    margin-left: 1000px;
+    z-index: -1;
+    position: absolute;
+}
+
+#circle6 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: 200px;
+    margin-left: 1100px;
+    z-index: -1;
+    position: absolute;
+}
+
+#circle7 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: -100px;
+    margin-left: 1400px;
+    z-index: -1;
+    position: absolute;
+}

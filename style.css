@@ -54,3 +54,57 @@ font-weight: bold;
 #change_color_zone{
     background-color: rebeccapurple ;
 }
+
+.content-jeu {
+    padding-top: 5%;
+}
+
+.title-jeu1 {
+    margin-left: 45%;
+    margin-top: 15%;
+    margin-bottom: -15%;
+    color: white;
+    font-size: 24px;
+}
+
+.div-jeu1 {
+    background: rgb(0, 123, 255);
+    margin: 1%;
+    padding-bottom: 10%;
+    border-radius: 40px;
+}
+
+.div-jeu2 {
+    background: rgb(254, 68, 248);
+    margin: 1%;
+    padding-bottom: 10%;
+    border-radius: 40px;
+}
+
+.div-jeu3 {
+    background: rgb(255, 169, 77);
+    margin: 1%;
+    padding-bottom: 10%;
+    border-radius: 40px;
+}
+
+.div-jeu4 {
+    background: rgb(54, 248, 0);
+    margin: 1%;
+    padding-bottom: 10%;
+    border-radius: 40px;
+}
+
+.content-footer {
+    background: rgb(192, 192, 192);
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.footer-div {
+    padding-top: 3%;
+    bottom: 0;
+    position: absolute;
+}
