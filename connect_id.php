@@ -1,8 +1,8 @@
 <?php
 include 'header.php';
-include 'fond.php';
 ?>
     <body>
+        <?php include 'fond.php';?>
         <header>
         </header>
 

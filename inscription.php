@@ -1,8 +1,8 @@
 <?php
 include 'header.php';
-include 'fond.php';
 ?>
 <body>
+    <?php include 'fond.php';?>
     <div class="container">
         <div class="circle" id="change_color_zone"></div>
     
