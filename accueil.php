@@ -54,9 +54,6 @@
           </div>
         </div>
       </div>
-    
-        
-        
     </div>
     <a href="connect_id.php">Connexion</a>
     <a href="inscription.php">Connexion</a>
