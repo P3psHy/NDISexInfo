@@ -22,13 +22,15 @@
                             <div>
                                 <label>Prénom : </label>
                                 <br>
-                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom ...">
+                                <input type="text" name="prenom" id="Prenom" placeholder="Votre prénom ..." onfocusout="verifPrenom()">
+                                <div id ="erreurPrenom"></div>
                             </div>
                             <br>
                             <div>
                                 <label>Âge : </label>
                                 <br>
-                                <input type="number" name="age" id="age" placeholder="Votre âge ...">
+                                <input type="number" name="age" id="Poids" placeholder="Votre âge ..." onfocusout="verifPoids()">
+                                <div id ="erreurPoids"></div>
                             </div>
                             <br>
                             <div>
@@ -43,29 +45,32 @@
                             <div>
                                 <label>Mail : </label>
                                 <br>
-                                <input type="text" name="mail" id="mail" placeholder="Votre mail ...">
+                                <input type="text" name="mail" id="Mail" placeholder="Votre mail ..." onfocusout="verifMail()">
+                                <div id ="erreurMail"></div>
                             </div>
                             <br>
                             <div>
                                 <label>Confirmer votre mail : </label>
                                 <br>    
-                                <input type="text" name="confirmMail" id="confirmMail" placeholder="Votre mail ...">
+                                <input type="text" name="confirmMail" id="CfMail" placeholder="Votre mail ..." onfocusout="verifCfMail()">
+                                <div id ="erreurCfMail"></div>
                             </div>
                             <br>
                             <div>
                                 <label>Mot de passe : </label>
                                 <br>
-                                <input type="password" name="password" id="password" placeholder="Votre mot de passe ...">
+                                <input type="password" name="password" id="password" placeholder="Votre mot de passe ..." minlength="6">
                             </div>
                             <br>
                             <div>
                                 <label>Confirmer votre mot de passe : </label>
                                 <br>
-                                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Votre mot de passe ...">
+                                <input type="password" name="confirmPassword" id="CfPassword" placeholder="Votre mot de passe ..." onfocusout="verifCfMdp()">
+                                <div id ="erreurCfPassword"></div>
                             </div>
                             <br>
                             <div>
-                            <button type="button" class="btn btn-primary btn-block mb-4">S'inscrire</button>
+                            <button type="submit" class="btn btn-primary btn-block mb-4">S'inscrire</button>
                             <button type="reset" class="btn btn-primary btn-block mb-4">Annuler</button>
                             </div>
                         </div>
@@ -74,4 +79,5 @@
         </div>
     </div>
 </body>
+<script src="reg.js"></script>
 </html>
