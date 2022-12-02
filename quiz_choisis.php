@@ -7,28 +7,32 @@
 
     $ligne_question = $sql_quiz_question->fetchall();
 
-    //recuperation des reponses
-    $sql_quiz_reponses=$connection->query('SELECT `reponses` FROM `reponses`,`quizz`,`question` 
-    WHERE quizz.id = reponses.id_quizz AND question.id=reponses.id_question AND quizz.id='.$_REQUEST['id'].' 
-    AND reponses.id_question=;') ;
-
-    $ligne_reponse = $sql_quiz_reponses->fetchall();
-
+    $i=1 ;
     foreach($ligne_question as $value_question){
-        echo $value_question['question'] ;
+        
+        echo "Question N° :".$i." ".$value_question['question'] ;
         echo "<br>";
+        echo "<br>";
+        
+            
+        //recuperation des reponses
+        $sql_quiz_reponses=$connection->query('SELECT `reponses` FROM `reponses`,`quizz`,`question` 
+        WHERE quizz.id = reponses.id_quizz AND question.id=reponses.id_question AND quizz.id='.$_REQUEST['id'].' 
+        AND reponses.id_question='.$i.';') ;
+
+        $ligne_reponse = $sql_quiz_reponses->fetchall();
+
+            
+        $i2=1;
         foreach($ligne_reponse as $value_reponses){
-            echo $ligne_reponse['reponses'] ;
+            
+            echo "Reponse N° :".$i2." ".$value_reponses['reponses'];
             echo "<br>";
+            echo "<br>";
+            $i2++;
+
         }
-    }
-
-   
-
-
-    foreach($ligne_reponse as $value){
-        echo $value['reponses'] ;
-        echo "<br>";
+        $i++;
     }
 
 
