@@ -36,16 +36,16 @@
     <div class="container text-center">
         <div class="row">
           <div class="col">
-            <a href="accueil.html" class="text-decoration-none text-dark">Accueil</a>
+            <a href="accueil.php" class="text-decoration-none text-dark">Accueil</a>
           </div>
           <div class="col">
-            <a href="jeux.html" class="text-decoration-none text-dark">Jeux</a>
+            <a href="jeux.php" class="text-decoration-none text-dark">Jeux</a>
           </div>
           <div class="col">
-            <a href="informations.html" class="text-decoration-none text-dark">Informations</a>
+            <a href="informations.php" class="text-decoration-none text-dark">Informations</a>
           </div>
           <div class="col">
-            <a href="informations.html" class="text-decoration-none text-dark">F.A.Q</a>
+            <a href="informations.php" class="text-decoration-none text-dark">F.A.Q</a>
           </div>
           <div class="col">
             <a href="inscription.php" class="text-decoration-none text-dark">
