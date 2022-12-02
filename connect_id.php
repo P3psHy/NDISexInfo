@@ -31,7 +31,7 @@ include 'header.php';
                         </label>
                         <br>
                         <br>
-                        <button type="button" class="btn btn-primary btn-block mb-4">Valider</button>
+                        <input type="submit" class="btn btn-primary btn-block mb-4" value="Valider"></input>
                         <button type="reset" class="btn btn-primary btn-block mb-4">Annuler</button>
                             <p>Vous n'êtes pas membre ? <a href="inscription.php" id="change_color">Inscrivez-vous</a></p>
                             <button type="button" class="btn btn-link btn-floating mx-1"></button>

@@ -8,10 +8,10 @@
       include 'header.php';
         ?>
 <body>
-    <?php include 'fond.php'; 
-    include 'navbar.php';?>
-        
-        
+    
+    <?php include 'fond.php'; ?>
+    <?php include 'navbar.php';?>
+    
     </div>
 </body>
 
