@@ -94,6 +94,25 @@ function verifCfMail(){
     test();
 }
 
+function verifMdp(){
+    var password = document.getElementById('password').value;
+    var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    if (password.match(regex)){
+        //Mettre la 1ere lettre en maj
+        password = document.getElementById('password').style.backgroundColor = 'lightgreen';
+        var erreurPassword = document.getElementById('erreurPassword');
+        erreurPassword.innerHTML = "";
+        test3 = true;
+    }
+    else 
+    {
+        password = document.getElementById('password').style.backgroundColor = '#FFCCCB';
+        var erreurPassword = document.getElementById('erreurPassword');
+        erreurPassword.innerHTML = "<font color = red> Attention, rentrez un mot de passe valide !</font>";
+        test3 = false;
+    }
+    test();
+}
 
 function verifCfMdp(){
     var password = document.getElementById('password').value;
@@ -147,146 +166,6 @@ function verifPoids(Poids){
     }
     test();
 }
-
-
-function verifTaille(){
-    var Taille = document.getElementById('Taille').value;
-    var regex = /[+-]?([0-9]*[.])?[0-9]+/;
-    if ( (Taille <= 2.70) && (Taille.match(regex))){
-        Taille = document.getElementById('Taille').style.backgroundColor = 'lightgreen';
-        var erreurTaille = document.getElementById('erreurTaille');
-        erreurTaille.innerHTML = "";
-        test6 = true;
-    }
-    else 
-    {
-        Taille = document.getElementById('Taille').style.backgroundColor = '#FFCCCB';
-        var erreurTaille = document.getElementById('erreurTaille');
-        erreurTaille.innerHTML = "<font color = red> Attention, rentrez une taille valide !</font>";
-        test6= false;
-    }
-
-    if (document.getElementById('Taille').value == ""){
-        Taille = document.getElementById('Taille').style.backgroundColor = '#FFCCCB';
-        var erreurTaille = document.getElementById('erreurTaille');
-        erreurTaille.innerHTML = "<font color = red>Attention, la case ne peut pas être vide !</font>";
-        test6= false;
-    }
-    test();
-}
-
-var now = new Date();
-
-function verifYear(){
-    var Year = document.getElementById('Year').value;
-    var Datemin = now.getFullYear() - 122;
-
-    if((Year <= now.getFullYear()) && (Year >= Datemin)){
-        Year = document.getElementById('Year').style.backgroundColor = 'lightgreen';
-        var erreurYear = document.getElementById('erreurYear');
-        erreurYear.innerHTML = "";
-        test7 = true;
-    }
-    else 
-    {
-        Year = document.getElementById('Year').style.backgroundColor = '#FFCCCB';
-        var erreurYear = document.getElementById('erreurYear');
-        erreurYear.innerHTML = "<font color = red> Attention, rentrez une année valide !</font>";
-        test7= false;
-    }
-
-    if (document.getElementById('Year').value == ""){
-        Year = document.getElementById('Year').style.backgroundColor = '#FFCCCB';
-        var erreurYear = document.getElementById('erreurYear');
-        erreurYear.innerHTML = "<font color = red> Attention, la case ne peut pas être vide !</font>";
-        test7= false;
-    }
-    test();
-}
-
-function verifMois(){
-    var Mois = document.getElementById('Mois').value;
-    var Mois = Mois - 1;
-    
-    
-    if (Mois < 12){
-        Mois = document.getElementById('Mois').style.backgroundColor = 'lightgreen';
-        var erreurMois = document.getElementById('erreurMois');
-        erreurMois.innerHTML = "";
-        test8 = true;
-    }
-    else 
-    {
-        Mois = document.getElementById('Mois').style.backgroundColor = '#FFCCCB';
-        var erreurMois = document.getElementById('erreurMois');
-        erreurMois.innerHTML = "<font color = red> Attention, rentrez un mois valide !</font>";
-        test8 = false;
-    }
-
-    if (document.getElementById('Mois').value == ""){
-        Mois = document.getElementById('Mois').style.backgroundColor = '#FFCCCB';
-        var erreurMois = document.getElementById('erreurMois');
-        erreurMois.innerHTML = "<font color = red> Attention, la case ne peut pas être vide !</font>";
-        test8 = false;
-    }
-    test();
-}
-
-function verifJour(){
-    var Jour = document.getElementById('Jour').value;
-    if ((Jour < 32) && (Jour > 0) ){
-        Jour = document.getElementById('Jour').style.backgroundColor = 'lightgreen';
-        var erreurJour = document.getElementById('erreurJour');
-        erreurJour.innerHTML = "";
-        verifDate();
-        test9 = true;
-    }
-    else 
-    {
-        Jour = document.getElementById('Jour').style.backgroundColor = '#FFCCCB';
-        var erreurJour = document.getElementById('erreurJour');
-        erreurJour.innerHTML = "<font color = red> Attention, rentrez un jour valide !</font>";
-        test9 = false;
-    }
-
-    if (document.getElementById('Jour').value == ""){
-        Jour = document.getElementById('Jour').style.backgroundColor = '#FFCCCB';
-        var erreurJour = document.getElementById('erreurJour');
-        erreurJour.innerHTML = "<font color = red> Attention, la case ne peut pas être vide !</font>";
-        test9 = false;
-    }
-    test();
-} 
-
-
-function verifDate(){
-    var Jour = document.getElementById('Jour').value;
-    var Mois = document.getElementById('Mois').value;
-    var Year = document.getElementById('Year').value;
-    var month = Mois - 1;
-    const oui = new Date(Year, month, Jour);
-    if (oui.getMonth() == month){
-        var erreurJour = document.getElementById('erreurJour');
-        erreurJour.innerHTML = "";
-        test10 = true;
-    }
-    else 
-    {
-        Jour = document.getElementById('Jour').style.backgroundColor = '#FFCCCB';
-        var erreurJour = document.getElementById('erreurJour');
-        erreurJour.innerHTML = "<font color = red> Attention, rentrez un jour valide selon son mois !</font>";
-        test10 = false;
-    }
-
-    if (document.getElementById('Jour').value == ""){
-        Jour = document.getElementById('Jour').style.backgroundColor = '#FFCCCB';
-        var erreurJour = document.getElementById('erreurJour');
-        erreurJour.innerHTML = "<font color = red> Attention, la case ne peut pas être vide !</font>";
-        test10 = false;
-    }
-    test();
-} 
-
 
 
 
