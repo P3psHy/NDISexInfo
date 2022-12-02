@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+include 'fond.php';
 ?>
 <body>
     <div class="container">
