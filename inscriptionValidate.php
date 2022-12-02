@@ -29,7 +29,7 @@ try{
 
     echo "Vos informations ont bien été ajoutées à notre base de données ! Vous êtes maintenant inscris !";
 
-    //header("location: accueil.php");
+    header("location: accueil.php");
 
 }catch (PDOException $e){
     echo "Erreur: ".$e->getMessage();
