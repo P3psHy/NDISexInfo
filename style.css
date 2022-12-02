@@ -6,3 +6,51 @@
     padding-top: 5px;
     margin-top: 10px;
 }
+
+#login{
+width:400px;
+margin:0 auto;
+margin-top:10%;
+}
+
+.form_login {
+width:100%;
+padding: 30px;
+border: 1px solid #f1f1f1;
+background: #fff;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.title_login{
+margin: 0 auto;
+padding-bottom: 10px;
+text-align: center;
+font-size: x-large;
+font-weight: bold;
+}
+
+.circle #change_color_zone{
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 55% ;
+}
+
+.circle::after #change_color_zone{
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+#change_color{
+    color: rebeccapurple;
+}
+
+#change_color_zone{
+    background-color: rebeccapurple ;
+}
